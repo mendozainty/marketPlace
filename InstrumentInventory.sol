@@ -4,23 +4,22 @@ pragma solidity ^0.8.11;
 // OpenZeppelin Contracts v4.4.1 (access/Ownable.sol)
 
 abstract contract Ownable {
-    address private _owner;
-    mapping (address => uint) public balance;
-
+    address payable public owner;
+    
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     constructor() {
-        _transferOwnership(msg.sender);
-        balance[msg.sender];
+        owner = payable(msg.sender);
     }
 
-    function owner() public view virtual returns (address) {
-        return _owner;
-    }
-    
-    modifier onlyOwner() {
-        require(owner() == msg.sender, "Ownable: caller is not the owner");
+    modifier onlyOwner {
+        require(msg.sender == owner, "Ownable: caller is not the owner");
         _;
+    }
+
+    function getBalance() public view onlyOwner returns (uint _balance) {
+        _balance = address(this).balance;
+        return _balance;
     }
 
     function renounceOwnership() public virtual onlyOwner {
@@ -33,8 +32,8 @@ abstract contract Ownable {
     }
 
     function _transferOwnership(address newOwner) internal virtual {
-        address oldOwner = _owner;
-        _owner = newOwner;
+        address oldOwner = owner;
+        owner = payable(newOwner);
         emit OwnershipTransferred(oldOwner, newOwner);
     }
 }
