@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Treasury Hunt | Ecommerce Website Design</title>
+        <title>Treasury Hunt | All Products</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,55 +11,35 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="header">
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="images/logo2.png" width="120px">
-                    </div>
-                    <nav>
-                        <ul id="MenuItens">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Account</a></li>    
-                        </ul>    
-                    </nav>
-                    <img src="images/cart1.png" width="30px" height="30px"> 
-                    <img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">   
-                 </div>
-                <div class="row">
-                    <div class="col-2">
-                        <h1>Find what you<br>are hunting for!</h1>
-                        <p>Eletronics, Shoes, Watches and more!</p>
-                        <a href="" class="btn">Explore Now &#8594</a>
-                    </div>
-                    <div class="col-2">
-                        <img src="images/iphone-13.png">
-                    </div>
+        <div class="container">
+            <div class="navbar">
+                 <div class="logo">
+                     <img src="images/logo2.png" width="120px">
                 </div>
-            </div>
-        </div>  
-        <!---------- featured categories ------->
-        <div class="categories">
-            <div class="small-conteiner">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/ipad-pro-12.jfif">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/iphone-12.jfif">
-                    </div>
-                    <div class="col-3">
-                        <img src="images/macbook-air.jpg">
-                    </div>               
-                </div>            
-            </div>           
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>    
+                    </ul>    
+                </nav>
+                <img src="images/cart1.png" width="30px" height="30px"> 
+                <img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">   
+            </div>                
         </div>
-        <!---------- featured products ------->
         <div class="small-conteiner">
-            <h2 class="title">Featured Products</h2>
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by rating</option>
+                    <option>Sort by sale</option>
+                </select>
+            </div>
             <div class="row">
                 <div class="col-4">
                     <img src="images/ipad-pro-12.jfif">
@@ -135,9 +115,6 @@
                     </div>
                     <p>$50.00</p>
                 </div>
-            </div>
-            <h2 class="title">Latest Products</h2>
-            <div class="row">
                 <div class="col-4">
                     <img src="images/playstation.jpg">
                     <h4>Playstation</h4>
@@ -174,99 +151,15 @@
                     </div>
                     <p>$600.00</p>
                 </div>
-            </div> 
-        </div>
-        <!--------------offer-------------->
-        <div class="offer">
-            <div class="small-conteiner">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/apple-watch.png" class="offer-img">
-                    </div>
-                    <div class="col-2">
-                        <p>Exclusive available on Treasure Hunt</p>
-                        <h1>Apple Watch</h1>
-                        <small>This exclusive watch can bring you to the next 
-                            level of fun and productivity. Full-touch display with 
-                            adjustable brightness.
-                        </small>
-                        <p></p>
-                        <a href="" class="btn">Buy Now &#8594</a>
-
-                    </div>
-                </div>
             </div>
-        </div>
-        <!----------- testimonial ---------->
-        <div class="testimonial">
-            <div class="small-conteiner">
-                <div class="row">
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>Excelent gadget for everybody. Good quality, good price,
-                            cool loking!
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                        <h3>Paul Simon</h3>
-                    </div>
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>I recomend. This shit changed my life for good!
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h3>Miles Davis</h3>
-                    </div>
-                    <div class="col-3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>Looks like a watch but delivers much more than time and date.
-                            You can order a pizza with this little thing!
-                        </p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <h3>Homer Simpson</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-------- brands ------>
-        <div class="brands">
-            <div class="small-conteiner">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="images/logo-apple.png">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/logo-nintendo.png">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/logo-psp.png">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/logo-xbox.png">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/logo-sony.png">
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>             
+        </div>    
         <!-------- footer ---------->
         <div class="footer">
             <div class="container">
