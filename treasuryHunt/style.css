@@ -220,6 +220,7 @@ small{
 .footer-col-2 img{
     width: 180px;
     margin-bottom: 20px;
+    border-radius: 100px;
 }
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
@@ -278,6 +279,112 @@ select:focus{
     background: #ff523b;
     color: #fff;
 }
+
+/*--------- single product details -------*/
+.single-product{
+    margin-top: 50px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+
+}
+
+/*-------- cart itens --------------------*/
+.cart-page{
+    margin: 80 auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+.cart-info p{
+    padding: 2px 10px;
+}
+.cart-info small{
+    padding: 2px 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 /*-------- media query for menu ----------*/
 @media only screen and (max-width: 800px){
 
@@ -305,12 +412,23 @@ select:focus{
     }
 }
 
-/*-------- media query for LESS THA 600px ----------*/
+
+/*-------- media query for LESS than 600px ----------*/
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
     }
-    .col-2, .col-3, .col-3-2, .col-4{
+    .col-2, .col-3, .col-4{
         flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 20px;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
     }
 }
