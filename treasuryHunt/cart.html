@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="store.js" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -34,56 +35,60 @@
         <!------ cart itens details ------->
         <div class="small-conteiner cart-page">
             <table id="cart-table">
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr id="table-row">
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/ipad-pro-12.jfif">
-                            <div>
-                                <p>iPad</p>
-                                <small>Price: $500</small>
-                                <br>
-                                <a href="" class="btn-remove" onclick="deleteRow()">Remove</a>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-container">
+                    <tr id="table-row">
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/ipad-pro-12.jfif">
+                                <div>
+                                    <p>iPad</p>
+                                    <small>Price: $500</small>
+                                    <br>
+                                    <a href="" class="btn-remove" onclick="deleteRow()">Remove</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$500</td>
-                </tr>
-                <tr  id="table-row">
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/iMac.jfif">
-                            <div>
-                                <p>iMac</p>
-                                <small>Price: $4500</small>
-                                <br>
-                                <a href="" class="btn-remove">Remove</a>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$500</td>
+                    </tr>
+                    <tr  id="table-row">
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/iMac.jfif">
+                                <div>
+                                    <p>iMac</p>
+                                    <small>Price: $4500</small>
+                                    <br>
+                                    <a href="" class="btn-remove">Remove</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$4500</td>
-                </tr>
-                <tr  id="table-row">
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/iphone-13.png">
-                            <div>
-                                <p>iPhone 13</p>
-                                <small>Price: $1000</small>
-                                <br>
-                                <a href="" class="btn-remove">Remove</a>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$4500</td>
+                    </tr>
+                    <tr  id="table-row">
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/iphone-13.png">
+                                <div>
+                                    <p>iPhone 13</p>
+                                    <small>Price: $1000</small>
+                                    <br>
+                                    <a href="" class="btn-remove">Remove</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$1000</td>
-                </tr>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$1000</td>
+                    </tr>
+                </tbody>                
             </table>
             <div class="total-price">
                 <table>

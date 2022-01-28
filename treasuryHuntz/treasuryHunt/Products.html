@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lanf="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Treasury Hunt | Product Details</title>
+        <title>Treasury Hunt | All Products</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="store.js" async></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -20,8 +18,8 @@
                 </div>
                 <nav>
                     <ul id="MenuItens">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>    
@@ -31,62 +29,17 @@
                 <img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">   
             </div>                
         </div>
-        <!------ sinlge product detail -------->
-        <div class="small-container single-product">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/iMac.jfif" width="100%" id="productImg">
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="images/iMac.jfif" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/imac2.jpg" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/imac3.jpg" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/imac4.jpg" width="100%" class="small-img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <p>iMac</p>
-                    <h1>iMac 21,5” Intel Core i3</h1>
-                    <h4>$4500</h4>
-                    <select id="Color">
-                        <option>Select Color</option>
-                        <option>Green</option>
-                        <option>Silver</option>
-                        <option>Blue</option>
-                        <option>Purple</option>
-                        <option>Red</option>
-                        <option>Orange</option>
-                        <option>Yellow</option>
-                    </select>
-                    <input type="number" value="1" id="Quantity">
-                    <a href="" class="btn btn-addToCart">Add to Cart</a>
-                    <h3>Product Details <i class="fa fa-indent"></i></h3>
-                    <br>
-                    <p>Apple  8GB 256GB SSD. The best computer in the whole world. 
-                        Try it and love it.</p>
-                </div>
-            </div>
-
-        </div>
-        <!------- title -------->
-
         <div class="small-conteiner">
             <div class="row row-2">
-                <h2>Related Products</h2>
-                <p>View More</p>
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by rating</option>
+                    <option>Sort by sale</option>
+                </select>
             </div>
-        </div>
-        <!------- products ----->
-        
-        <div class="small-conteiner">
-            
             <div class="row">
                 <div class="col-4">
                     <img src="images/ipad-pro-12.jfif">
@@ -124,7 +77,88 @@
                     </div>
                     <p>$900.00</p>
                 </div>
-            </div>                                    
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/iphone-13.png">
+                    <h4>Iphone 13</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$1200.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/iMac.jfif">
+                    <h4>iMac</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$5000.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/airpod.jfif">
+                    <h4>Airpod</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/playstation.jpg">
+                    <h4>Playstation</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$1000.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/xbox.jpg">
+                    <h4>Xbox</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$1500.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/nintendo-switch-11.jpg">
+                    <h4>Nintendo Switch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$600.00</p>
+                </div>
+            </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>             
         </div>    
         <!-------- footer ---------->
         <div class="footer">
@@ -182,29 +216,6 @@
                         MenuItens.style.maxHeight = "0px";
                     }
             }
-        </script>
-
-        <!------- js for product galery -------->
-
-        <script>
-            var productImg = document.getElementById("productImg");
-            var SmallImg = document.getElementsByClassName("small-img");
-            SmallImg[0].onclick = function()
-                {
-                    productImg.src = SmallImg[0].src;
-                }
-            SmallImg[1].onclick = function()
-                {
-                    productImg.src = SmallImg[1].src;
-                }
-            SmallImg[2].onclick = function()
-                {
-                    productImg.src = SmallImg[2].src;
-                }
-            SmallImg[3].onclick = function()
-                {
-                    productImg.src = SmallImg[3].src;
-                }
         </script>
     </body>
 </html>
