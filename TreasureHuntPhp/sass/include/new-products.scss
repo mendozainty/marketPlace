@@ -1,0 +1,16 @@
+/* New Products Template */
+
+#new-products{
+    .container .owl-carousel .item .product a{
+        overflow: hidden;
+    }
+
+    .container .owl-carousel .item .product img{
+        transition: transform .5s ease;
+    }
+
+    .container .owl-carousel .item .product img:hover{
+        transform: scale(1.1);
+    }
+    
+}

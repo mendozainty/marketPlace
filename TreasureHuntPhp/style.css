@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Dancing+Script&family=Lobster&family=Raleway&family=Rubik&display=swap");
 /*     Sass Template  */
 /* global classes */
 button.button:focus {
@@ -19,6 +19,14 @@ button.button:focus {
   font-family: "Rubik", cursive;
 }
 
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-lobster {
+  font-family: "Lobster", cursive;
+}
+
 .font-size-12 {
   font-size: 12px;
 }
@@ -37,19 +45,19 @@ button.button:focus {
 
 /* Color Template*/
 .color-primary {
-  color: #003859;
+  color: #faa60b;
 }
 
 .color-primary-bg {
-  background: #003859;
+  background: #faa60b;
 }
 
 .color-second {
-  color: #ca2268;
+  color: #eb307e;
 }
 
 .color-second-bg {
-  background: #ca2268;
+  background: #eb307e;
 }
 
 .color-yellow {
@@ -58,6 +66,55 @@ button.button:focus {
 
 .color-yellow-bg {
   background: #FFD289;
+}
+
+/* Top-sale template*/
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #faa60b;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+
+/* Special Price Template*/
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+#special-price .grid .grid-item .product a {
+  overflow: hidden;
+}
+#special-price .grid .grid-item .product img {
+  transition: transform 0.5s ease;
+}
+#special-price .grid .grid-item .product img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

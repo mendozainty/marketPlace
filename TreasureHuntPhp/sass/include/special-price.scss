@@ -1,0 +1,20 @@
+/* Special Price Template*/
+
+#special-price{
+    .grid .grid-item{
+        margin-right: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .grid .grid-item .product a{
+        overflow: hidden;
+    }
+
+    .grid .grid-item .product img{
+        transition: transform .5s ease;
+    }
+
+    .grid .grid-item .product img:hover{
+        transform: scale(1.1);
+    }
+}
