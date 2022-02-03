@@ -4,3 +4,9 @@ button.button:focus{
     outline: none !important;
     box-shadow: none !important;
 }
+
+hr{
+    height: 1px;
+    background-color: $color-primary !important;
+    border: none;
+}

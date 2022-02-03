@@ -6,6 +6,12 @@ button.button:focus {
   box-shadow: none !important;
 }
 
+hr {
+  height: 1px;
+  background-color: #faa60b !important;
+  border: none;
+}
+
 /* typography classes */
 .font-baloo {
   font-family: "Baloo Thambi 2", cursive;
@@ -43,6 +49,10 @@ button.button:focus {
   font-size: 20px;
 }
 
+.font-size-24 {
+  font-size: 24px;
+}
+
 /* Color Template*/
 .color-primary {
   color: #faa60b;
@@ -69,6 +79,9 @@ button.button:focus {
 }
 
 /* Top-sale template*/
+#top-sale .container {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
 #top-sale .owl-carousel .item .product a {
   overflow: hidden;
 }
@@ -103,6 +116,9 @@ button.button:focus {
 }
 
 /* Special Price Template*/
+#special-price .item {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
 #special-price .grid .grid-item {
   margin-right: 1.2rem;
   margin-top: 1rem;
@@ -114,6 +130,17 @@ button.button:focus {
   transition: transform 0.5s ease;
 }
 #special-price .grid .grid-item .product img:hover {
+  transform: scale(1.1);
+}
+
+/* New Products template */
+#new-products .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#new-products .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#new-products .owl-carousel .item .product img:hover {
   transform: scale(1.1);
 }
 

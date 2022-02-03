@@ -1,0 +1,19 @@
+41:451
+1:01:46
+node -v
+
+npm i -g sass
+
+npm init
+// get json
+//{
+//"name":
+//	.
+//	.
+//"test": echo..
+//"start": "sass ./sass/style.scss style.css --watch"
+
+
+npm i -g sass
+
+blog img w-1920 h-1280

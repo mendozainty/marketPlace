@@ -2,6 +2,9 @@ $(document).ready(function(){
 
     // banner owl carousel
     $("#banner-area .owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
         loop: true,
         dots: true,
         items: 1
@@ -9,6 +12,9 @@ $(document).ready(function(){
 
     // as cores mais quentes owl carousel
     $("#top-sale .owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
         loop: true,
         nav: true,
         dots: false,
@@ -39,6 +45,9 @@ $(document).ready(function(){
 
     // new-products owl-carousel
     $("#new-products .owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
         loop: true,
         nav: false,
         dots: true,
