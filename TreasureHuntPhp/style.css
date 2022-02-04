@@ -8,7 +8,7 @@ button.button:focus {
 
 hr {
   height: 1px;
-  background-color: #faa60b !important;
+  background-color: #f8a407 !important;
   border: none;
 }
 
@@ -55,11 +55,11 @@ hr {
 
 /* Color Template*/
 .color-primary {
-  color: #faa60b;
+  color: #f8a407;
 }
 
 .color-primary-bg {
-  background: #faa60b;
+  background: #f8a407;
 }
 
 .color-second {
@@ -102,7 +102,7 @@ hr {
 #top-sale .owl-carousel .owl-nav button.owl-prev span,
 #top-sale .owl-carousel .owl-nav button.owl-next span {
   font-size: 35px;
-  color: #faa60b;
+  color: #f8a407;
   padding: 0 1rem;
 }
 #top-sale .owl-carousel .owl-nav button.owl-next {

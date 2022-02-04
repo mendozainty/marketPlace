@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho #As Poderosas</title>
+
+    <!---Bootstrap CDN--->
+    <!---- NOT LATEST VERSION -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Owl Carousel CDN--->
+    <!---- NOT LATEST VERSION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN-->
+    <!---- NOT LATEST VERSION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+    <!-- Custom CSS file--->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- start #header -->
+    <header id="header">
+            <div class="strip d-flex justify-content-between px-4 py-1 bg-dark">
+                <p class="font-rale font-size-12 color-primary m-0">Produto Brasileiro</p>
+                <div class="font-rale font-size-14">
+                    <a href="#" class="px-3 border-right border-warning border-left color-primary">Login</a>
+                    <a href="#" class="px-3 border-right border-warning color-primary">Like <i class="fas fa-heart" style="color: #faa60b;"></i> (0)</a>
+
+                </div>
+            </div>
+
+            <!--- Primary Navigation -->
+            <nav class="navbar navbar-expand-lg color-second-bg">
+                <a class="navbar-brand font-lobster color-primary" style="font-size: 26px;" href="#">#As Poderosas</a>
+                <button class="navbar-toggler border border-warning text-center font-lobster font-size-16 color-primary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon py-1 mr-2">Menu</span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active">
+                             <a class="nav-link font-lobster font-size-16"  style="color: #faa60b;" href="#">Novidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-lobster font-size-16"  style="color: #faa60b;" href="#">Produtos <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-lobster font-size-16"  style="color: #faa60b;"  href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-lobster font-size-16"  style="color: #faa60b;"  href="#">Em Breve</a>
+                        </li>
+                    </ul>  
+                    <form action="#" class="font-size-14 font-rale">
+                        <a href="" class="py-2 rounded-pill color-primary-bg">
+                            <span class="font-size-16 px-2 text-dark"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="px-3 py-2 rounded-pill text-light bg-dark">0</span>
+                        </a>
+                    </form>                  
+                </div>                
+            </nav>
+            <!--- !Primary Navigation -->
+    </header>    
+    <!-- !start #header -->
+
+    <!-- start #main-site -->
+    <main id="main-site" class="bg-dark"> 
+
+      <!---- cart---->
+      <section id="cart" class="py-3">
+        <div class="container-fluid w-75">
+          <h5 class="font-baloo font-size-20 color-primary">Carrinho</h5>
+
+          <!--- shopping-cart items-->
+          <div class="row">
+            <div class="col-sm-9">
+
+              <!--- cart items--->
+              <div class="row border-top border-warning py-3 mt-3">
+                <div class="col-sm-2">
+                  <img src="./assets/products/sombra1.jpeg" style="height: 120px;" alt="cart1" class="img-fluid border-0 rounded">
+                </div>
+                <div class="col-sm-8">
+                  <h5 class="font-lobster color-primary font-size-20">Combo Max</h5>
+                  <small class="font-baloo color-primary">by <span class="font-lobster color-second">#As Poderosas</span></small>
+                  <!----product rating---->
+                  <div class="d-flex">
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <a href="#" class="px-2 font-baloo font-size-14">10.024 votos</a>
+                  </div>
+                  <!----!product rating---->
+                  <!--- product qty---->
+                  <div class="qty d-flex pt-2">
+                    <div class="qty d-flex flex-wrap font-baloo w-25">
+                      <button class="qty-up border border-warning bg-light" data-id="prod1"><i class="fas fa-angle-up"></i></button>
+                      <input type="text" class="qty_input border border-warning px-2 w-50 bg-light" data-id="prod1" disabled value="1" placeholder="1">
+                      <button class="qty-down border border-warning bg-light" data-id="prod1"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <button type="submit" class="btn font-baloo text-danger">Deletar</button>
+                    <button type="submit" class="btn font-baloo text-danger">Salvar</button>
+                  </div>                  
+                  <!--- !product qty---->
+                </div>
+                <div class="col-sm-2 text-right">
+                  <div class="font-lobster font-size-20 color-primary">
+                    <span class="product_price">35,00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row border-top border-warning py-3 mt-3">
+                <div class="col-sm-2">
+                  <img src="./assets/products/sombra2.jpeg" style="height: 120px;" alt="cart1" class="img-fluid border-0 rounded">
+                </div>
+                <div class="col-sm-8">
+                  <h5 class="font-lobster color-primary font-size-20">Kit Jumbo</h5>
+                  <small class="font-baloo color-primary">by <span class="font-lobster color-second">#As Poderosas</span></small>
+                  <!----product rating---->
+                  <div class="d-flex">
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="fas fa-heart"></i></span>
+                      <span><i class="far fa-heart"></i></span>
+                    </div>
+                    <a href="#" class="px-2 font-baloo font-size-14">10.024 votos</a>
+                  </div>
+                  <!----!product rating---->
+                  <!--- product qty---->
+                  <div class="qty d-flex pt-2">
+                    <div class="qty d-flex flex-wrap font-baloo w-25">
+                      <button class="qty-up border border-warning bg-light" data-id="prod2"><i class="fas fa-angle-up"></i></button>
+                      <input type="text" class="qty_input border border-warning px-2 w-50 bg-light" data-id="prod2" disabled value="1" placeholder="1">
+                      <button class="qty-down border border-warning bg-light" data-id="prod2"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <button type="submit" class="btn font-baloo text-danger">Deletar</button>
+                    <button type="submit" class="btn font-baloo text-danger">Salvar</button>
+                  </div>                    
+                  <!--- !product qty---->
+                </div>
+                <div class="col-sm-2 text-right">
+                  <div class="font-lobster font-size-20 color-primary">
+                    <span class="product_price">35,00</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!--- !cart items--->
+            </div>
+            <!----subtotal-->
+            <div class="col-sm-3">
+              <div class="sub-total text-center border border-warning mt-2">
+                <h6 class="font-baloo font-size-12 text-success py-3"><i class="fas fa-check"></i>&nbsp;&nbsp;Frete grátis para esse pedido</h6>
+                <div class="border-top border-warning py-4">
+                  <h5 class="font-baloo color-primary">Subtotal (2 item)&nbsp;<span class="text-danger" id="deal-price">75,00</span></h5>
+                  <button type="submit" class="btn btn-warning mt-3 font-lobster">#É Meu!</button>
+                </div>
+              </div>
+            </div>
+            <!----!subtotal-->
+            
+          </div>
+          <!--- !shopping-cart items-->
+        </div>
+
+      </section>
+      <!---- !cart---->
+        
+     <!--- New Products-->
+     <section id="new-products">
+      <div class="container py-5">
+          <h4 class="font-lobster font-size-24 color-primary">#Novidades</h4>
+          <hr>
+          <div class="owl-carousel owl-theme">
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra1.jpeg" alt="sombra1" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Combo Max</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>35,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>                                                
+              </div>
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra2.jpeg" alt="sombra2" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Kit Jumbo</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>35,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra3.jpeg" alt="sombra3" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Kit Baladeira Master</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>35,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra4.jpeg" alt="sombra4" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Kit Sem dó</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>35,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra5.jpg" alt="sombra5" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Kit Balada</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>20,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="item py-2 bg-dark">
+                  <div class="product font-lobster border border-warning rounded bg-light">
+                      <a href="#"><img src="./assets/products/sombra6.jpg" alt="sombra6" class="img-fluid"></a>
+                      <div class="text-center">
+                          <h5 class="color-second py-3">Kit Pancadão</h5>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                              <span><i class="fas fa-heart"></i></span>
+                          </div>
+                          <div class="price py-2 color-primary">
+                              <span>20,00</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12 m-3">#É Meu!</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--- !New Products-->
+
+       
+
+    </main>
+    <!-- !start ##main-site -->
+
+    <!-- start #footer --->
+        <footer id="footer" class="bg-dark py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <h4 class="font-lobster color-primary font-size-20">#As Poderosas</h4>
+                        <p class="font-baloo font-size-14 text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa nemo dolorem debitis commodi ratione obcaecati consequatur explicabo expedita nihil?</p>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <h4 class="font-baloo color-primary font-size-20" style="font-weight: bold;">Newsletter</h4>
+                        <form class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email*">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-2">Inscrever</button>
+                            </div>
+                        </form>                        
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <h4 class="font-baloo color-primary font-size-20" style="font-weight: bold;">Informações</h4>
+                        <div class="d-flex flex-column flex-wrap">
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Sobre nós</a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Informações de Entrega</a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Política de Privacidade</a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Termos & Condições</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <h4 class="font-lobster color-primary font-size-20">#Sou poderosa</h4>
+                        <div class="d-flex flex-column flex-wrap">
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Minha Conta</a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Histórico de Compras</a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Lista de Likes <i class="fas fa-heart"></i></a>
+                            <a href="#" class="font-baloo font-siz-14 text-white-50 pb-1">Newsletter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright text-center bg-dark text-white py-2">
+            <p class="font-baloo font-size-14">&copy;Copyright 2022. Design by <a href="https://github.com/mendozainty">@mendozainty</a></p>
+        </div>
+    <!-- !start #footer --->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    
+    <!--- isotope plugin---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--- Custom Javascript --->
+    <script src="./index.js"></script>
+</body>
+</html>

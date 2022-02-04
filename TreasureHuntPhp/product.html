@@ -70,7 +70,7 @@
     <main id="main-site" class="bg-dark">
 
         <!---Product---->
-        <section id="prroduct" class="py-3">
+        <section id="product" class="py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 color-primary py-3">
+                    <div class="col-sm-6 color-primary py-0">
                         <h4 class="font-lobster font-size-20">Combo Max</h4>
                         <small>by </small><small class="font-lobster font-size-16">#As poderosas</small>
                          <div class="d-flex py-1">
@@ -97,7 +97,7 @@
                             </div>
                             <a href="#" class="px-2 font-baloo font-size-14">20.345 ratings | 1000+ respostas</a>                        
                         </div>
-                        <hr>
+                        <hr class="m-0">
                             <!---product price---->
                         <table class="my-3">
                             <tr class="font-baloo font-size-14">
@@ -106,7 +106,7 @@
                             </tr>
                             <tr class="font-lobster font-size-20">
                                 <td class="px-2">#As Poderosas</td>
-                                <td class="px-2"><span class="color-second">35,00</span><small class="font-baloo color-second font-size-14">&nbsp;&nbsp;pague com PIX</small></td>
+                                <td class="px-2"><span class="color-second">35,00</span><a href="#" class="font-baloo color-primary font-size-14">&nbsp;&nbsp;pague com PIX</a></td>
                             </tr>
                             <tr class="font-lobster font-size-20">
                                 <td class="font-size-14 px-2">Você economiza</td>
@@ -118,23 +118,86 @@
                         <div id="policy">
                             <div class="d-flex">
                                 <div class="return text-center mr-5">
-                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-retweet border border-warning p-3 rounded-pill"></span>
+                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-retweet border border-warning p-3 rounded-circle  color-second"></span>
                                     </div>
                                     <a href="#" class="font-baloo color-primary font-size-12">7 dias<br>Troca</a>
                                 </div>
                                 <div class="return text-center mr-5">
-                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-truck border border-warning p-3 rounded-pill"></span>
+                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-truck border border-warning p-3 rounded-pill color-second"></span>
                                     </div>
-                                    <a href="#" class="font-baloo color-primary font-size-12">7 dias<br>Troca</a>
+                                    <a href="#" class="font-baloo color-primary font-size-12">Calcule o frete<br>Sedex</a>
                                 </div>
                                 <div class="return text-center mr-5">
-                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-check-double border border-warning p-3 rounded-pill"></span>
+                                    <div class="font-size-20 my-2 color-primary"><span class="fas fa-check-double border border-warning p-3 rounded-pill color-second"></span>
                                     </div>
-                                    <a href="#" class="font-baloo color-primary font-size-12">7 dias<br>Troca</a>
+                                    <a href="#" class="font-baloo color-primary font-size-12">Skin<br>Friendly</a>
                                 </div>
                             </div>
                         </div>
                         <!---!policy------>
+                        <hr>
+                        <!---- order detail--->
+                        <div class="row">
+                            <div class="col-6">
+                                <small>loja virtual <a href="#" class="font-lobster color-second">#As Poderosas</a></small>
+                            </div>
+                            <div class="col-6">
+                                <small>Entrega em: <span id="delivery-date" class="color-second">30-abr</span></small> <br>
+                                <small><i class="fas fa-map-marker-alt color-primary"></i>  CEP <span id="cep-usuario">00000-000</span> </small>
+                            </div>
+                        </div>
+                        <!---- !order detail--->
+                        <div class="row">
+                            <div class="col-6">
+                                <!----color--->
+                                <div class="color my-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="font-baloo">Cor </h6>
+                                        <div class="p-2 color-yellow-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                                        <div class="p-2 color-primary-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                                        <div class="p-2 color-second-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                                    </div>
+                                </div>
+                                <!----!color--->
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="qty d-flex my-3">
+                                    <h6 class="font-baloo font-size-14">Quantidade</h6>
+                                    <div class="px-4 d-flex font-baloo">
+                                        <button class="qty-up border border-warning bg-light" data-id="prod1"><i class="fas fa-angle-up"></i></button>
+                                        <input type="text" data-id="prod1" class="qty_input border border-warning px-2 w-50 bg-light" disabled value="1" placeholder="1">
+                                        <button class="qty-down border border-warning bg-light" data-id="prod1"><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---color qty---->
+                        
+                        <div class="size font-baloo">
+                            <div class="d-flex text-center justify-content-between w-75 py-3 ml-0">
+                                <h6 class="font-baloo font-size-14">Palheta</h6>
+                                <div class="font-baloo border border-warning rounded-pill color-primary-bg w-25 p-2">
+                                    <button class="btn p-0 font-size-14">1 cor</button>
+                                </div>
+                                <div class="font-baloo border border-warning rounded-pill color-primary-bg w-25 p-2">
+                                    <button class="btn p-0 font-size-14">2 cores</button>
+                                </div>
+                                <div class="font-baloo border border-warning rounded-pill color-primary-bg w-25 p-2">
+                                    <button class="btn p-0 font-size-14">4 cores</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!---!color qty---->
+
+                    </div>
+                    <div class="col-12">
+                        <h6 class="font-baloo color-primary font-size-20 mt-2">Detalhes</h6>
+                        <hr>
+                        <p class="foont-baloo font-size-16 color-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, nulla! Excepturi tenetur nesciunt tempore fugit sequi laboriosam necessitatibus minus, vero natus assumenda, cumque beatae non, qui quae nulla exercitationem. Eum itaque mollitia earum facere, laborum vel nisi enim eligendi ut, tempora commodi accusamus illo impedit sapiente nesciunt sed officiis ratione.</p>
+                        <p class="foont-baloo font-size-16 color-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, nulla! Excepturi tenetur nesciunt tempore fugit sequi laboriosam necessitatibus minus, vero natus assumenda, cumque beatae non, qui quae nulla exercitationem. Eum itaque mollitia earum facere, laborum vel nisi enim eligendi ut, tempora commodi accusamus illo impedit sapiente nesciunt sed officiis ratione.</p>
                     </div>
                 </div>
             </div>
